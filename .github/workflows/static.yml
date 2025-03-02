@@ -78,15 +78,11 @@
         <!-- Information Box with glowing shadow -->
         <div class="info-box">
 
-            <!-- Image and Text Container -->
-            <div class="image-container">
-                <!-- Circular Image -->
-                <div class="circle-image">
-                    <img src="Somethin is Coming Up.png" alt="Image">
-                </div>
-
                 <!-- Heading Text Below Image -->
                 <div class="image-text">
+                <p>SOMETHING IS COMING UP</P>
+                <P> @<P/>
+                <P> KPGU</p>
                     <p>THERE ARE NO SHORTCUTS TO SUCCESS</p>
                     <p>GO AND ATTEND LECTURES</p>
                 </div>
