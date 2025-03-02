@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPGU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .active {
+            display: block; /* Show the active page */
+        }
+
+        /* Style for the main container */
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            height: 100vh; /* Full viewport height */
+            align-items: center; /* Center content vertically */
+        }
+
+        /* Information Box */
+        .info-box {
+            width: 98vw;
+            max-width: 1000px; /* Limit max width */
+            height: 700px;
+            background-color: rgb(246, 242, 242);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Glowing shadow effect */
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 15px; /* Optional: rounded corners */
+        }
+
+        /* Text Styles Below the Image */
+        .image-text {
+            text-align: center;
+            color: #333; /* Set text color */
+        }
+
+        /* Style for the first three paragraphs */
+        .first-three {
+            font-size: 70px; /* Larger font size */
+            font-weight: bold;
+            color: #FF5733; /* A unique color */
+            text-transform: uppercase; /* Uppercase text */
+            margin-bottom: 70px; /* More space between first three and last two paragraphs */
+            opacity: 0; /* Start invisible */
+            transform: scale(0); /* Start scaled down */
+            animation: zoomIn 0.5s forwards; /* Animation */
+        }
+
+        /* Style for the last two paragraphs (as they were originally) */
+        .last-two {
+            font-size: 50px; /* Default font size for last two paragraphs */
+            margin-top: 50px; /* More space between the first three and last two paragraphs */
+            font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            opacity: 0; /* Start invisible */
+            transform: scale(0); /* Start scaled down */
+            animation: zoomIn 0.5s forwards; /* Animation */
+        }
+
+        .image-text p {
+            margin: 10px 0;
+        }
+
+        /* Animation Keyframes */
+        @keyframes zoomIn {
+            to {
+                opacity: 1; /* Fade in */
+                transform: scale(1); /* Scale to normal size */
+            }
+        }
+
+        /* Delay for each paragraph */
+        .first-three:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+        .first-three:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        .first-three:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        .last-two:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .last-two:nth-child(5) {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Audio Element for Entry Music -->
+    <audio id="entryMusic" autoplay loop>
+        <source src="path/to/your/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <!-- Information Box with glowing shadow -->
+        <div class="info-box">
+
+            <!-- Heading Text Below Image -->
+            <div class="image-text">
+                <!-- First Three Paragraphs -->
+                <p class="first-three">Something is coming up</p>
+                <p class="first-three">@</p>
+                <p class="first-three">KPGU</p>
+
+                <!-- Last Two Paragraphs (as they were originally) -->
+                <p class="last-two">THERE ARE NO SHORTCUTS TO SUCCESS</p>
+                <p class="last-two">GO AND ATTEND THE LECTURES</p>
+            </div>
+        </div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="C:\Users\thakk\Downloads\horn-stabs-entrance-14741.mp3" type="audio/mp3">
+    </audio>
